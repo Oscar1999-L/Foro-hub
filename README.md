@@ -1,5 +1,5 @@
 --Empezaremos creando la Base de Datos para ello se abre el Command Line de MySQL y pega lo siguiente. Primero asegúrate de no contar con una BD con el mismo nombre, si en dado caso existe, salta el paso de la creación.
-
+```
 CREATE DATABASE forohub;
 
 USE forohub;
@@ -49,5 +49,6 @@ CREATE TABLE topico (
 
 	CONSTRAINT fk_usuario_id_autor FOREIGN KEY(id_autor) REFERENCES usuario(id),
 	CONSTRAINT fk_curso_id_curso FOREIGN KEY(id_curso) REFERENCES curso(id),
-  CONSTRAINT fk_respuesta_id_respuesta FOREIGN KEY(id_respuestas) REFERENCES respuesta(id)
+ 	CONSTRAINT fk_respuesta_id_respuesta FOREIGN KEY(id_respuestas) REFERENCES respuesta(id)
 );
+```
